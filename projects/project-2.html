@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1 — y.d.</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        
+        <!-- Left-Center Static Sidebar -->
+        <aside class="sidebar">
+            
+            <!-- Clickable Tibetan Seal -->
+            <a href="../index.html" class="logo-mark" aria-label="Home">
+                <span class="seal-box">ཡེ་ཤེས་བྱང་ཆུབ།</span>
+            </a>
+
+            <div class="site-header-group">
+                <span class="kicker">vol. 01 — archive</span>
+                <h1 class="site-title"><a href="../index.html">yeshe d. jangchup</a></h1>
+            </div>
+
+            <nav class="index-nav">
+
+                <div class="nav-item">
+                    <a href="../about.html"><span class="roman">I.</span> about</a>
+                </div>
+
+                <details open>
+                    <summary><span class="roman">II.</span> projects</summary>
+                    <ul>
+                        <li><a href="project-1.html" class="active" aria-current="page">project 1 <span class="year">00 / 0000</span></a></li>
+                        <li><a href="project-2.html">project 2 <span class="year">00 / 0000</span></a></li>
+                    </ul>
+                </details>
+
+                <details open>
+                    <summary><span class="roman">III.</span> kēpion</summary>
+                    <ul>
+                        <li><a href="../kepion/blurb-1.html">tulips & turmoil <span class="year">05 / 2025</span></a></li>
+                        <li><a href="../kepion/blurb-2.html">peonies & pinches<span class="year">03 / 2026</span></a></li>
+                        <li><a href="../kepion/blurb-3.html">lilies & lorn<span class="year">11 / 2026</span></a></li>
+                    </ul>
+                </details>
+
+            </nav>
+
+            <!-- Locked Bottom Footer -->
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="mailto:you@example.com">email ↗</a>
+                    <a href="https://github.com" target="_blank">github ↗</a>
+                    <a href="https://linkedin.com" target="_blank">linkedin ↗</a>
+                </div>
+                <div class="footer-bottom-row">
+                    <p class="copyright">© y.d. jangchup 2026</p>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle light or dark mode" title="Switch theme">
+                        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right-Center Static Project Plate -->
+        <main class="content">
+            <article class="project-view">
+                
+                <div class="editorial-header">
+                    <span class="kicker">no. 02 — project 2</span>
+                    <h2 class="display-title">project 2</h2>
+                    <p class="subtitle">
+
+                    </p>
+                </div>
+
+                <!-- Two-Column Description & Metadata -->
+                <div class="project-details-grid">
+                    <div class="project-summary">
+                        <p class="body-text">
+                            to be updated.
+                        </p>
+                    </div>
+
+                    <div class="project-specs">
+                        <div class="spec-row">
+                            <span class="kicker">methods</span>
+                            <p class="muted">
+                                <!-- Python, NetworkX, R -->
+                            </p>
+                        </div>
+                        <div class="spec-row">
+                            <span class="kicker">links</span>
+                            <p><a href=" " target="_blank" class="inline-link">repository ↗</a> &nbsp;&nbsp; <a href=" " target="_blank" class="inline-link">demo ↗</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </main>
+
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('light-mode');
+            const isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script>
+
+</body>
+</html>

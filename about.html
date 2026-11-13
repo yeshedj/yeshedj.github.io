@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about — y.d.</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.documentElement.classList.add('light-mode');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        
+        <!-- Left-Center Static Sidebar -->
+        <aside class="sidebar">
+            
+            <!-- Clickable Seal / Character Logo -->
+            <a href="index.html" class="logo-mark" aria-label="Home">
+                <span class="seal-box">ཡེ་ཤེས་བྱང་ཆུབ།</span>
+            </a>
+
+            <div class="site-header-group">
+                <span class="kicker">VOL. 01 — ARCHIVE</span>
+                <h1 class="site-title"><a href="index.html">yeshe d. jangchup</a></h1>
+            </div>
+
+            <nav class="index-nav">
+
+                <div class="nav-item">
+                    <a href="about.html" class="active"><span class="roman">I.</span> about</a>
+                </div>
+
+                <details open>
+                    <summary><span class="roman">II.</span> projects</summary>
+                    <ul>
+                        <li><a href="projects/project-1.html">project 1 <span class="year">00 / 0000</span></a></li>
+                        <li><a href="projects/project-2.html">project 2 <span class="year">00 / 0000</span></a></li>
+                    </ul>
+                </details>
+
+                <details open>
+                    <summary><span class="roman">III.</span> kēpion</summary>
+                    <ul>
+                        <li><a href="kepion/blurb-1.html">tulips & turmoil <span class="year">05 / 2025</span></a></li>
+                        <li><a href="kepion/blurb-2.html">peonies & pinches<span class="year">03 / 2026</span></a></li>
+                        <li><a href="kepion/blurb-3.html">lilies & lorn<span class="year">11 / 2026</span></a></li>
+                    </ul>
+                </details>
+
+            </nav>
+
+            <!-- Locked Bottom Footer with Sun/Moon Theme Toggle -->
+            <div class="sidebar-footer">
+                <div class="social-links">
+                    <a href="mailto:yeshedjangchup@gmail.com">email ↗</a>
+                    <a href="https://github.com/yeshedj" target="_blank">github ↗</a>
+                    <a href="https://linkedin.com/in/yeshejangchup" target="_blank">linkedin ↗</a>
+                </div>
+                <div class="footer-bottom-row">
+                    <p class="copyright">© y.d. jangchup 2026</p>
+                    <button id="theme-toggle" class="theme-btn" aria-label="Toggle light or dark mode" title="Switch theme">
+                        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right-Center Static About Layout -->
+        <main class="content">
+            <article class="about-view">
+                
+                <div class="editorial-header">
+                    <span class="kicker">NO. 01 — ABOUT</span>
+                    <h2 class="display-title">ego kai ta <em>anthi mou</em>.</h2>
+                    <p class="subtitle">"i and the flowers of me"</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left Column: Narrative Bio -->
+                    <div class="about-bio">
+                        <p class="lead-text">hi! i'm yeshe</p>
+                        <p class="body-text">currently exploring the intersection of data analytics, network neuroscience, and the neural mechanisms underlying cognitive function, dysfunction, and behavior</p>
+                        <a href="index.html" class="explore-link">← return to frontispiece</a>
+                    </div>
+
+                    <!-- Right Column: Catalog Metadata -->
+                    <div class="about-meta">
+                         <div class="meta-block">
+                            <span class="kicker">currently</span>
+                            <p class="role-title">macalester college '27</p>
+                            <p class="muted"><em>major:</em> data science</p>
+                            <p class="muted"><em>minor:</em> psychology</p>
+                        </div>
+
+                        <!-- <div class="meta-block">
+                            <span class="kicker">INTERESTS</span>
+                            <ul class="meta-list">
+                                <li>Design & Visual Systems</li>
+                                <li>Creative Coding & Web</li>
+                                <li>Writing & Archival Research</li>
+                            </ul>
+                        </div> -->
+
+                        <div class="meta-block">
+                            <span class="kicker">curriculum vitae</span>
+                            <p><a href="resume.pdf" target="_blank" class="inline-link">view pdf ↗</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+        </main>
+
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('light-mode');
+            const isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script>
+
+</body>
+</html>
